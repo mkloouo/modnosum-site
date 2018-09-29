@@ -1,16 +1,9 @@
 version: "3"
 services:
-  web:
+  web-server:
     image: nginx:alpine
-    deploy:
-      resources:
-        limits:
-          cpus: "0.5"
-          memory: 100M
-      restart_policy:
-        condition: on-failure
     ports:
-      - "56333:80"
+      - "55123:80"
     volumes:
       - ".:/usr/share/nginx/html:ro"
     networks:
