@@ -1,4 +1,6 @@
-main {
-    max-width: 900px;
-    margin: auto;
+body {
+  font-family: 'Palanquin', sans-serif;
+  padding-top: 50px;
+  color: white;
+  background: black;
 }
